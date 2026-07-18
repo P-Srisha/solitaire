@@ -12,9 +12,9 @@ class Card:
         
     def __str__(self):
         if not self.face_up:
-            return "▓▓"
+            return "🂠"
         
         value_map = {1: "A", 11: "J", 12: "Q", 13: "K"}
 
-        display_value = value_map.get(self.value, str(self.value));
+        display_value = value_map.get(self.value, str(self.value))
         return f"{display_value}{self.suit}"

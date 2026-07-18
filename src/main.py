@@ -7,10 +7,6 @@ game = Game()
 printer = GamePrinter(game)
 printer.print_board()
 
-if (__name__ == "__main__"):
-    printer.print_board()
-
-
 while True:
     cmd = input("Command (d=draw, m=move, a=auto-move, u=undo, r=restart,n=new-game, h=help, q=quit): ").strip().lower()
 

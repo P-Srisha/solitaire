@@ -18,7 +18,8 @@ class Game:
         self.tableau = [Pile("tableau") for _ in range(7)]
         self.stock = Pile("stock")
         self.waste = Pile("waste")
-        self.foundations = [Pile("foundation") for _ in range(4)]
+        foundation_suits = ["♡", "♢", "♣", "♠"]
+        self.foundations = [Pile("foundation", suit) for suit in foundation_suits]
 
         for i in range(7):
             for j in range(i+1):
@@ -155,16 +156,11 @@ class Game:
             return False
         # checking if all the cards to be moved are face up
         cards_to_move = move.source.cards[-move.count:]
-
-        # for card in cards_to_move:
-        #     if not card.face_up:
-        #         return False
-        # REWRITING THIS USING ALL
+        
 
         if not all(card.face_up for card in cards_to_move):
             return False
             
-        # FIRST RULE YAYYAYAY 
         # okay so first check if its Tableau to Tableau
         # then first rule says compare the bottom of the moving pile and the top of dest pile
         # they must be of oppsoite colors and the top of dest must be exactly one more than the bottom of moving pile
