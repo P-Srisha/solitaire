@@ -14,6 +14,14 @@ A command-line implementation of **Klondike Solitaire** written in Python. The p
 - Win condition detection
 - Modular Object-Oriented design
 
+---
+
+## Screenshot
+
+![Gameplay](screenshots\Solitaire_gameplay.png)
+
+---
+
 ## Project Structure
 
 ```text
@@ -26,6 +34,8 @@ solitaire/
 |  ├── game.py
 |  ├── printer.py
 |  ├── main.py
+├── screenshots
+|  ├── Solitaire_gameplay.png
 ├── README.md
 └── .gitignore
 ```
