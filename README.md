@@ -18,7 +18,7 @@ A command-line implementation of **Klondike Solitaire** written in Python. The p
 
 ## Screenshot
 
-![Gameplay](screenshots\Solitaire_gameplay.png)
+![Gameplay](screenshots/Solitaire_gameplay.png)
 
 ---
 
